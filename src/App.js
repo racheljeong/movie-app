@@ -6,9 +6,9 @@ export default function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/hello" render={() => <h1>hello</h1>} />
-        <Route exact path="/" component={Home} />
-        <Route path="/character/:id" component={Detail} />
+        <Route path={process.env.PUBLIC_URL+"/hello"} render={() => <h1>hello</h1>} />
+        <Route exact path={process.env.PUBLIC_URL+"/"} component={Home} />
+        <Route path={process.env.PUBLIC_URL+"/character/:id"} component={Detail} />
       </Switch>
     </Router>
   );

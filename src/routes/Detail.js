@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams} from "react-router-dom";
 import styles from "./Detail.module.css";
 function Detail() {
     
@@ -31,7 +31,7 @@ function Detail() {
                 movie.map((one) => (
                     <div key={one.id}>
                         <h1 className={styles.movie_detail_title}>{one.name}</h1>
-                        <img className={styles.detail_movie_img} src={`${one.thumbnail.path}.${one.thumbnail.extension}`} />
+                        <img className={styles.detail_movie_img} src={`${one.thumbnail.path}.${one.thumbnail.extension}`}alt={one.name} />
                         {one.description ?? "No Description yet"} 
                         {/* {one.description ? (
                             <span className={styles.info} >{one.description}</span>
