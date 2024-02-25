@@ -1,0 +1,42 @@
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+  }
+
+.movies {
+    margin-top: 25vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 10px;
+    width: 80%;
+    
+}
+
+.home_title {
+    font-family: fantasy;
+    font-weight: 300;
+    font-size: 100px;
+    position: absolute; /* 위치를 절대 위치로 설정 */
+    top: 5%; /* 상단에서 5% 지점에 위치 */
+    left: 50%; /* 왼쪽에서 50% 지점에 위치 */
+    transform: translate(-50%, -50%); /* 중앙 정렬을 위해 50%만큼 이동 */
+    text-align: center; /* 텍스트를 가운데 정렬 */
+    color: rgb(228, 240, 250);
+    
+}
+
+.loader {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+}
+
+.loading {
+    color: rgb(70, 71, 72);
+}
